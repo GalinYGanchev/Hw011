@@ -42,6 +42,9 @@ public class Main {
 			numString = "nine";
 			break;
 		}
+		if (num < 0 || num > 15){
+			System.out.print("Ùמ עתי ןנאגטר סודא?");
+		}
 		System.out.println(numString);
 
 	}
