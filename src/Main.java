@@ -1,17 +1,18 @@
+// Напишете програма,
+// която взема дадена цифра (0-9) и я изписва с дума (на англ. език)
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// Напишете програма,
-		// която взема дадена цифра (0-9) и я изписва с дума (на англ. език)
+		
 		Scanner in = new Scanner(System.in);
 		System.out.println("Insert Number (0-9):");
 		int num = in.nextInt();
 		System.out.println("");
 
 		
-		String numString = null ;
+		String numString = "" ;
 		switch (num) {
 		case 1:
 			numString = "one";
@@ -40,6 +41,9 @@ public class Main {
 			break;
 		case 9:
 			numString = "nine";
+			break;
+		case 0:
+			numString = "zero";
 			break;
 		}
 		if (num < 0 || num > 15){
